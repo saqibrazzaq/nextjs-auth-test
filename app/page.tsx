@@ -13,7 +13,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24 gap-5">
       <h2>Headers</h2>
       {keyList.map((key) => (
-        <p>
+        <p key={key}>
           <strong>{key}:</strong> {headersList.get(key)}
         </p>
       ))}
